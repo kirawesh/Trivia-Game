@@ -1,0 +1,12 @@
+* {
+    margin: 5px;
+}
+
+body {
+    font-size: 1.7em;
+    align-items: center;    
+}
+
+input.button {
+    border-radius: 25%;
+}
