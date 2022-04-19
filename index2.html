@@ -1,21 +1,28 @@
 <!DOCTYPE html>
 <html lang="heb-IL">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Assistant&family=Fredoka&family=Heebo&family=Rubik&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style index2.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
     <title>משחק טריוויה</title>
 </head>
+
 <body>
     <div>איך משחקים?</div>
-    <div><input type="button" class="buttonall button1" value="כותרת"></div>
-    <div><input type="button" class="buttonall button2" value="כותרת"></div>
-    <div><input type="button" class="buttonall button3" value="כותרת"></div>
-    <div><input type="button" class="buttonall button4" value="כותרת"></div>
+    <div class="container">
+        <div class="mainboard">
+            <div><input id="b1" type="button" class="buttonall button1" value="כותרת" onclick="error(this.id,'error text 1')"></div>
+            <div><input id="b2" type="button" class="buttonall button2" value="כותרת" onclick="error(this.id,'error text 2')"></div>
+            <div><input id="b3" type="button" class="buttonall button3" value="כותרת" onclick="error(this.id,'error text 3')"></div>
+            <div><input id="b4" type="button" class="buttonall button4" value="כותרת" onclick="success(this.id)"></div>
+        </div>
+    </div>
+    <div id="errortext"></div>
     <div><input type="button" class="button" value="ממשיכים"></div>
+
 </body>
+
 </html>
