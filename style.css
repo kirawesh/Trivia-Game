@@ -1,84 +1,96 @@
+/* ---- General ---- */
+
 * {
-    margin: 5px;
-  }
+  margin: 5px;
+}
 
 img {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 body {
-    margin-top: 10%;
-    margin-right: 10%;
-    margin-left: 10%;
-    font-size: 1.7em;
-    font-family: Noto Sans Hebrew;
-    border: 1px solid red;  
-    text-align: center;
-    direction: rtl;
+  /* Safe zone */
+  position: relative;
+  margin: 203px 80px 180px 80px;
+  border: 1px solid #000000;
+  box-sizing: border-box;
+
+  /* Font Display */
+  font-family: Noto Sans Hebrew;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 27px;
+  text-align: center;
+  direction: rtl;
 }
 
-/* unvisited link */
-a:link {
-    color: rgb(0, 0, 0);
-  }
-  
-  /* visited link */
-  a:visited {
-    color: green;
-  }
-  
-  /* mouse over link */
-  a:hover {
-    color: hotpink;
-  }
-  
-  /* selected link */
-  a:active {
-    color: rgb(0, 0, 0);
-  }
+/* ---- index ---- */
+
+.logobig {
+  display: block;
+  margin-top: 105px;
+}
+
+.slogan {
+  padding: 44px;
+  font-size: 25px;
+}
 
 input.button {
-    border-radius: 50px;
-    font-family: Noto Sans Hebrew;
-    font-style: normal;
-    font-size: 30px;
-    padding: 10px 50px;
-    text-align: center;
-    background-color: #e7e7e7; color: black;
-    border: none;
-    margin: 60px 0px 20px 0px;
+  border-radius: 50px;
+  font-family: Noto Sans Hebrew;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  padding: 10px 50px;
+  text-align: center;
+  background-color: #e7e7e7;
+  color: black;
+  border: none;
+  margin: 235px 0px 48px 0px;
 }
 
-input.button:hover{
-  box-shadow: 0 2px 5px 0 rgba(0,0,0,0.1), 0 2px 5px 0 rgba(0,0,0,0.19);
-  background-color: rgb(249,250,251);
+input.button:hover {
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.1), 0 2px 5px 0 rgba(0, 0, 0, 0.19);
+  background-color: rgb(249, 250, 251);
+  cursor: pointer;
+}
+
+input.button:active {
+  background-color: rgb(117, 117, 117);
   cursor: pointer;
 }
 
 /* Trivia Buttons */
 @font-face {
+  font-family: Noto Sans Hebrew;
+  src: url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+}
+
+@font-face {
   font-family: Assistant;
-  src: url('https://fonts.googleapis.com/css2?family=Assistant&display=swap');
+  src: url('https://fonts.googleapis.com/css2?family=assistant&display=swap');
 }
 
 @font-face {
   font-family: Rubik;
-  src: url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+  src: url('https://fonts.googleapis.com/css2?family=rubik&display=swap');
 }
 
 @font-face {
   font-family: Heebo;
-  src: url('https://fonts.googleapis.com/css2?family=Heebo&display=swap');
+  src: url('https://fonts.googleapis.com/css2?family=heebo&display=swap');
 }
 
 @font-face {
   font-family: Fredoka;
-  src: url('https://fonts.googleapis.com/css2?family=Fredoka&display=swap');
+  src: url('https://fonts.googleapis.com/css2?family=fredoka&display=swap');
 }
 
-input.buttonall{
+input.buttonall {
   background-color: #FFFFFF;
   cursor: pointer;
   border: 0;
@@ -95,9 +107,9 @@ input.buttonall{
   box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
 }
 
-input.buttonall:hover{
-  box-shadow: 0 2px 5px 0 rgba(0,0,0,0.1), 0 2px 5px 0 rgba(0,0,0,0.19);
-  background-color: rgb(249,250,251);
+input.buttonall:hover {
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.1), 0 2px 5px 0 rgba(0, 0, 0, 0.19);
+  background-color: rgb(249, 250, 251);
   transition: 0.7s;
 }
 
@@ -105,43 +117,51 @@ input.buttonall:active {
   background-color: #ffbf00;
 }
 
-input.button1 {  
+input.button1 {
   font-family: 'Assistant', sans-serif;
-  
+
   font-weight: 400;
 }
 
-input.button2 {  
+input.button2 {
   font-family: 'Rubik', sans-serif;
-  
+
   font-weight: 400;
 }
 
-input.button3 {  
+input.button3 {
   font-family: 'Heebo', sans-serif;
-  
+
   font-weight: 400;
 }
 
 input.button4 {
   font-family: 'Fredoka', sans-serif;
-  
+
   font-weight: 400;
 }
 
 .mainboard {
-  width: 40%;
+  width: 50%;
   justify-content: center;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   align-content: center;
-  align-items: center; 
+  align-items: center;
 }
+
 .container {
   margin: auto;
   display: grid;
   align-items: center;
   justify-items: center;
+  grid-template-columns: 341px auto;
+  gap: 5px;
 }
 
+.phone {
+  background-image: url(img/backgroundPhone.png);
+  width: 341px;
+  height: 699px;
+}
