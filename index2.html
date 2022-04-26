@@ -11,23 +11,51 @@
 </head>
 
 <body>
-    <div class="Title">איך משחקים?</div>
-    <div class="container" dir="ltr">
-        <div class="phone" id="phonetext">
-            <div id="header"> hihdhdh</div>
+    <div class="title2">קודם, איך משחקים?</div>
+    <div class="containerdivider">
+        <div class="rightboard">
+            <div class="subcontainerdivider">
+                <div class="topboard">
+                    <div class="question">כאן תוצג שאלה על הבריף</div>
+                    <div class="photobrief"></div>
+                </div>
+                <div class="bottomboard">
+                    <div class="question">כאן בוחרים באופציה המתאימה בהתאם לבריף</div>
+                    <form>
+                        <div>
+                            <input id="b1" type="button" class="buttonall button1" value="כותרת"
+                                onclick="error(this.id,'פונט לא נכון 1')">
+                            <div class="fontname1">Open Sans 400</div>
+                        </div>
+                        <div>
+                            <input id="b2" type="button" class="buttonall button2" value="כותרת"
+                                onclick="error(this.id,'פונט לא נכון 2')">
+                            <div class="fontname2">Rubik 400</div>
+                        </div>
+                        <div>
+                            <input id="b3" type="button" class="buttonall button3" value="כותרת"
+                                onclick="error(this.id,'פונט לא נכון 3')">
+                            <div class="fontname3">Heebo 400</div>
+                        </div>
+                        <div>
+                            <input id="b4" type="button" class="buttonall button4" value="כותרת"
+                                onclick="success(this.id)">
+                            <div class="fontname4">Varela Round 400</div>
+                        </div>
+                    </form>
+                    <div id="errortext"></div>
+                    <div id="successtext"></div>
+                </div>
+            </div>
+
         </div>
-        <div class="mainboard">
-            <div><input id="b1" type="button" class="buttonall button1" value="כותרת"
-                    onclick="error(this.id,'error text 1')"></div>
-            <div><input id="b2" type="button" class="buttonall button2" value="כותרת"
-                    onclick="error(this.id,'error text 2')"></div>
-            <div><input id="b3" type="button" class="buttonall button3" value="כותרת"
-                    onclick="error(this.id,'error text 3')"></div>
-            <div><input id="b4" type="button" class="buttonall button4" value="כותרת" onclick="success(this.id)"></div>
+        <div class="leftboard">
+            <div class="phonemockup" id="phonetext">
+                <div id="header"> hihdhdh</div>
+            </div>
         </div>
     </div>
-    <div id="errortext"></div>
-    <div><input type="button" class="button" value="ממשיכים"></div>
+        <div class="bottomcontainer"><input type="button" class="button" value="ממשיכים"></div>
 
 </body>
 

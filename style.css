@@ -1,7 +1,10 @@
 /* ---- General ---- */
+@import url('https://fonts.googleapis.com/css2?family=Assistant&family=Heebo&family=Open+Sans&family=Rubik&family=Varela+Round&display=swap');
 
-* {
-  margin: 5px;
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 img {
@@ -12,18 +15,15 @@ img {
 
 body {
   /* Safe zone */
-  position: relative;
-  margin: 203px 80px 180px 80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   border: 1px solid #000000;
-  box-sizing: border-box;
 
   /* Font Display */
-  font-family: Noto Sans Hebrew;
-  font-style: normal;
+  font-family: 'Assistant', sans-serif;
   font-weight: 400;
-  font-size: 20px;
-  line-height: 27px;
-  text-align: center;
   direction: rtl;
 }
 
@@ -31,21 +31,20 @@ body {
 
 .logobig {
   display: block;
-  margin-top: 105px;
+  margin-top: 55px;
 }
 
 .slogan {
   padding: 44px;
-  font-size: 25px;
+  font-size: 30px;
 }
 
 input.button {
   border-radius: 50px;
-  font-family: Noto Sans Hebrew;
-  font-style: normal;
+  font-family: 'Assistant', sans-serif;
   font-weight: 400;
-  font-size: 20px;
-  padding: 10px 50px;
+  font-size: 25px;
+  padding: 5px 50px;
   text-align: center;
   background-color: #e7e7e7;
   color: black;
@@ -64,103 +63,134 @@ input.button:active {
   cursor: pointer;
 }
 
-/* Trivia Buttons */
-@font-face {
-  font-family: Noto Sans Hebrew;
-  src: url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+/* ---- index2 ---- */
+
+.title2 {
+  font-size: 30px;
+  padding-top: 50px;
+  padding-bottom: 80px;
 }
 
-@font-face {
-  font-family: Assistant;
-  src: url('https://fonts.googleapis.com/css2?family=assistant&display=swap');
-}
+/* Grid */
 
-@font-face {
-  font-family: Rubik;
-  src: url('https://fonts.googleapis.com/css2?family=rubik&display=swap');
-}
-
-@font-face {
-  font-family: Heebo;
-  src: url('https://fonts.googleapis.com/css2?family=heebo&display=swap');
-}
-
-@font-face {
-  font-family: Fredoka;
-  src: url('https://fonts.googleapis.com/css2?family=fredoka&display=swap');
-}
-
-input.buttonall {
-  background-color: #FFFFFF;
-  cursor: pointer;
-  border: 0;
-  border-radius: .2rem;
-  width: 15rem;
-  box-sizing: border-box;
-  color: #111827;
-  font-family: Noto Sans Hebrew;
-  font-size: 1.2rem;
-  font-weight: 600;
-  line-height: 1.25rem;
-  padding: .9rem 1rem;
-  text-align: center;
-  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
-}
-
-input.buttonall:hover {
-  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.1), 0 2px 5px 0 rgba(0, 0, 0, 0.19);
-  background-color: rgb(249, 250, 251);
-  transition: 0.7s;
-}
-
-input.buttonall:active {
-  background-color: #ffbf00;
-}
-
-input.button1 {
-  font-family: 'Assistant', sans-serif;
-
-  font-weight: 400;
-}
-
-input.button2 {
-  font-family: 'Rubik', sans-serif;
-
-  font-weight: 400;
-}
-
-input.button3 {
-  font-family: 'Heebo', sans-serif;
-
-  font-weight: 400;
-}
-
-input.button4 {
-  font-family: 'Fredoka', sans-serif;
-
-  font-weight: 400;
-}
-
-.mainboard {
-  width: 50%;
-  justify-content: center;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  align-content: center;
-  align-items: center;
-}
-
-.container {
-  margin: auto;
+.containerdivider {
   display: grid;
-  align-items: center;
-  justify-items: center;
-  grid-template-columns: 341px auto;
-  gap: 5px;
+  place-items: center;
+  grid-template-columns: 1fr 1fr;
+  padding: 0px 40px 0px 40px;
 }
 
-.phone {
+.rightboard {
+  padding-left: 50px;
+}
+
+.subcontainerdivider {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  height: 699px;
+}
+
+.topboard {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding-bottom: 50px;
+}
+
+.topboard .question {
+  font-size: 20px;
+  padding-left: 50px;
+  text-align: right;
+}
+
+.topboard .photobrief {
+  background-image: url(img/PhotoBrief.png);
+  width: 126px;
+  height: 200px;
+}
+
+.bottomboard .question {
+  font-size: 20px;
+  padding-bottom: 30px;
+  text-align: right;
+}
+
+.bottomboard form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 25px;
+  place-items: center;
+}
+
+.buttonall {
+  width: 250px;
+  height: 70px;
+  box-shadow: 0px 4px 12px -4px rgb(235, 235, 235);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease-in;
+}
+
+#errortext {
+  text-align: right;
+  padding-top: 40px;
+}
+
+#successtext {
+  text-align: right;
+  padding-top: 40px;
+}
+
+/*Trivia Buttons*/
+
+.button1 {
+  font-size: 30px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+}
+
+.fontname1 {
+  padding-top: 5px;
+  font-size: 15px;
+}
+
+.button2 {
+  font-size: 30px;
+  font-family: 'Rubik';
+  font-weight: 400;
+}
+
+.fontname2 {
+  padding-top: 5px;
+  font-size: 15px;
+}
+
+.button3 {
+  font-size: 30px;
+  font-family: 'Heebo';
+  font-weight: 400;
+}
+
+.fontname3 {
+  padding-top: 5px;
+  font-size: 15px;
+}
+
+.button4 {
+  padding-top: 5px;
+  font-size: 30px;
+  font-family: 'Varela Round';
+  font-weight: 400;
+}
+
+.fontname4 {
+  padding-top: 5px;
+  font-size: 15px;
+}
+
+/* leftboard */
+
+.phonemockup {
   background-image: url(img/backgroundPhone.png);
   width: 341px;
   height: 699px;
