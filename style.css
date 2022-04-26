@@ -94,11 +94,12 @@ input.button:active {
   display: grid;
   grid-template-columns: 1fr 1fr;
   padding-bottom: 50px;
+  justify-items: end;
 }
 
 .topboard .question {
   font-size: 20px;
-  padding-left: 50px;
+  padding-left: 70px;
   text-align: right;
 }
 
@@ -134,11 +135,13 @@ input.button:active {
 #errortext {
   text-align: right;
   padding-top: 40px;
+  position: fixed;
 }
 
 #successtext {
   text-align: right;
   padding-top: 40px;
+  position: fixed;
 }
 
 /*Trivia Buttons*/
@@ -192,6 +195,32 @@ input.button:active {
 
 .phonemockup {
   background-image: url(img/backgroundPhone.png);
-  width: 341px;
-  height: 699px;
+  width: 344px;
+  height: 696px;
+}
+
+
+#header {
+  position: relative;
+  top: 100px;
+  right: 60px;
+  max-width: 224px;
+  max-height: 496px;
+}
+#header1 {
+  position: relative;
+  top: 300px;
+  right: 60px;
+  max-width: 224px;
+  max-height: 496px;
+}
+
+.scoreboard {
+  display: grid;
+    grid-template-columns: auto auto 50px;
+    padding-bottom: 50px;
+    width: 92%;
+    justify-items: center;
+    justify-content: space-between;
+    padding-left: 80px;
 }
