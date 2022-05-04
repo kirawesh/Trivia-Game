@@ -16,10 +16,6 @@ body {
     text-align: center;
 }
 
-p {
-    font-size: 16px;
-}
-
 input.button {
     border-radius: 50px;
     font-size: 25px;
@@ -35,18 +31,6 @@ input.button:hover {
     cursor: pointer;
 }
 
-/* ---- Index ---- */
-
-.logobig {
-    display: block;
-    margin-top: 55px;
-  }
-  
-  .slogan {
-    padding: 44px;
-    font-size: 30px;
-  }
-
 /* ---- Demo ---- */
 
 .title2 {
@@ -57,7 +41,7 @@ input.button:hover {
     min-height: 1em;
 }
 
-/* Score */
+/* score */
 
 .scoreboardContainer {
     display: grid;
@@ -83,7 +67,6 @@ input.button:hover {
 
 .score {
     padding-left: 1em;
-    direction: ltr;
 }
 
 .pageContainer {
@@ -93,16 +76,20 @@ input.button:hover {
     justify-items: right;
 }
 
-/* Content */
-
+/* content */
 .contentContainer {
     display: grid;
-    grid-template-columns: 50% 50%;
+    grid-template-columns: 1fr 1fr;
+    padding: 2em 2em;
 }
 
-.subContainerDivider {
+.topBoard {
     display: grid;
-    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+}
+
+.topBoard .question {
+    font-size: 20px;
 }
 
 .rightBoard {
@@ -110,17 +97,9 @@ input.button:hover {
     max-width: 720px;
 }
 
-.topBoard {
-    padding: 2em;
-}
-
-.topBoard .question {
-    font-size: 20px;
-}
-
-.middleBoard {
-    text-align: right;
-    padding: 2em;
+.subContainerDivider {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
 }
 
 .middleBoard .question {
@@ -128,103 +107,89 @@ input.button:hover {
     padding-bottom: 30px;
 }
 
-/*Fonts Buttons*/
-
 .middleBoard form {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-gap: 40px;
+    grid-gap: 25px;
+    justify-items: center;
 }
 
+.lineDivider{
+    border-bottom: 1px solid rgb(0, 0, 0);
+    padding-top: 2em;
+}
+
+.bottomBoard {
+    padding-top: 10em;
+    margin: 0 auto;
+}
+
+/* Gameplay Buttons */
 .buttonall {
-    width: 100%;
-    height: 100%;
+    width: 300px;
+    height: 70px;
     box-shadow: 0px 4px 12px -4px rgb(235, 235, 235);
     border: none;
     border-radius: 5px;
     cursor: pointer;
     transition: all 0.3s ease-in;
-    padding: 0 .5em;
-  }
+}
 
 .button1 {
     font-size: 30px;
     font-family: 'Open Sans', sans-serif;
     font-weight: 400;
-  }
-  
-  .fontname1 {
+}
+
+.fontName1 {
     padding-top: 5px;
     font-size: 15px;
-  }
-  
-  .button2 {
+}
+
+.button2 {
     font-size: 30px;
     font-family: 'Rubik';
     font-weight: 400;
-  }
-  
-  .fontname2 {
+}
+
+.fontName2 {
     padding-top: 5px;
     font-size: 15px;
-  }
-  
-  .button3 {
+}
+
+.button3 {
     font-size: 30px;
     font-family: 'Heebo';
     font-weight: 400;
-  }
-  
-  .fontname3 {
+}
+
+.fontName3 {
     padding-top: 5px;
     font-size: 15px;
-  }
-  
-  .button4 {
+}
+
+.button4 {
+    padding-top: 5px;
     font-size: 30px;
     font-family: 'Varela Round';
     font-weight: 400;
-  }
-  
-  .fontname4 {
+}
+
+.fontName4 {
     padding-top: 5px;
     font-size: 15px;
-  }
+}
 
-  /* Text */
+/* Gameplay text */
 
-  #errortext {
+#errortext {
     text-align: right;
-    padding-top: 40px;
+    padding-top: 10px;
     position: fixed;
-  }
-  
-  #successtext {
+}
+
+#successtext {
     text-align: right;
-    padding-top: 40px;
+    padding-top: 10px;
     position: fixed;
-  }
-
-/* leftboard */
-
-.phonemockup {
-    background-image: url(img/backgroundPhone.png);
-    width: 344px;
-    height: 696px;
-  }
-  
-  #header {
-    position: relative;
-    top: 100px;
-    right: 60px;
-    max-width: 224px;
-    max-height: 496px;
-  }
-  
-  #header1 {
-    position: relative;
-    top: 300px;
-    right: 60px;
-    max-width: 224px;
-    max-height: 496px;
-  }
+}

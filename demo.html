@@ -7,61 +7,69 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <script src="script.js"></script>
-    <title>משחק טריוויה</title>
+    <title>משחק פונטים</title>
+    <script>
+        sessionStorage.setItem('counter', 0);
+    </script>
 </head>
 
 <body>
     <div class="title2">קודם, איך משחקים?</div>
-    <div class="scoreboard">
-        <div class="page">1/10</div>
-            <div class="score" id="score">000</div>
-            <div class="crown">photo</div>
+    <div class="scoreboardContainer">
+        <div class="pageContainer">
+            <div class="page">דמו</div>
         </div>
-    <div class="containerdivider">
-        <div class="rightboard">
-            <div class="subcontainerdivider">
-                <div class="topboard">
-                    <div class="question">כאן תוצג שאלה על הבריף</div>
-                    <div class="photobrief"></div>
+        <div class="scoreContainer">
+            <div class="crown"></div>
+            <div class="score" id="score">000</div>
+        </div>
+    </div>
+    <div class="contentContainer">
+        <div class="rightBoard">
+            <div class="subContainerDivider">
+                <div class="topBoard">
+                    <div class="question">כאן יוצג בריף</div>
                 </div>
-                <div class="bottomboard">
+                <div class="middleBoard">
                     <div class="question">כאן בוחרים באופציה המתאימה בהתאם לבריף</div>
                     <form>
                         <div>
                             <input id="b1" type="button" class="buttonall button1" value="כותרת"
                                 onclick="error(this.id,'פונט לא נכון 1')">
-                            <div class="fontname1">Open Sans 400</div>
+                            <div class="fontName1">Open Sans 400</div>
                         </div>
                         <div>
                             <input id="b2" type="button" class="buttonall button2" value="כותרת"
                                 onclick="error(this.id,'פונט לא נכון 2')">
-                            <div class="fontname2">Rubik 400</div>
+                            <div class="fontName2">Rubik 400</div>
                         </div>
                         <div>
                             <input id="b3" type="button" class="buttonall button3" value="כותרת"
                                 onclick="error(this.id,'פונט לא נכון 3')">
-                            <div class="fontname3">Heebo 400</div>
+                            <div class="fontName3">Heebo 400</div>
                         </div>
                         <div>
                             <input id="b4" type="button" class="buttonall button4" value="כותרת"
                                 onclick="success(this.id)">
-                            <div class="fontname4">Varela Round 400</div>
+                            <div class="fontName4">Varela Round 400</div>
                         </div>
                     </form>
                     <div id="errortext"></div>
                     <div id="successtext"></div>
                 </div>
+                <div class="bottomBoard">
+                    <input type="button" class="button" value="ממשיכים" onclick="document.location.href='page1.html'">
+                </div>
             </div>
 
         </div>
-        <div class="leftboard">
-            <div class="phonemockup" id="phonetext">
-                <div id="header"> hihdhdh jkhgjkhgh jkhgjkh jkhgjkhg kjhjhgedg </div>                        
+        <div class="leftBoard">
+            <div class="phoneMockup" id="phoneText">
+                <div id="header"> hihdhdh jkhgjkhgh jkhgjkh jkhgjkhg kjhjhgedg </div>
                 <div id="header1"> hihdhdh jkhgjkhgh jkhgjkh jkhgjkhg kjhjhgedg </div>
             </div>
         </div>
     </div>
-        <div class="bottomcontainer"><input type="button" class="button" value="ממשיכים"></div>
 
 </body>
 
