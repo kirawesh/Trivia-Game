@@ -10,6 +10,7 @@
     <title>משחק פונטים</title>
     <script>
         sessionStorage.setItem('counter', 0);
+        sessionStorage.setItem('font1', '');
     </script>
 </head>
 
@@ -28,49 +29,75 @@
         <div class="rightBoard">
             <div class="subContainerDivider">
                 <div class="topBoard">
-                    <div class="question">כאן יוצג בריף</div>
+                    <div class="question">אנחנו מעוניינים לעשות לוקליזציה לפוסטר, איזה פונט בעברית יתאים למילה 'קיץ' בכותרת שתשדר את האווירה המוצגת כאן?</div>
                 </div>
                 <div class="middleBoard">
-                    <div class="question">כאן בוחרים באופציה המתאימה בהתאם לבריף</div>
+                    <div class="question">יש לבחור ארבעה פונטים מתוך שמונה.</div>
                     <form>
                         <div>
-                            <input id="b1" type="button" class="buttonall button1" value="כותרת"
-                                onclick="error(this.id,'פונט לא נכון 1')">
+                            <input id="b1" type="button" class="buttonall button1" value="קיץ" onclick="error(this.id,'Narkisim')">
                             <div class="fontName1">Open Sans 400</div>
                         </div>
                         <div>
-                            <input id="b2" type="button" class="buttonall button2" value="כותרת"
-                                onclick="error(this.id,'פונט לא נכון 2')">
+                            <input id="b2" type="button" class="buttonall button2" value="קיץ" onclick="success(this.id,'Narkisim')">
                             <div class="fontName2">Rubik 400</div>
                         </div>
                         <div>
-                            <input id="b3" type="button" class="buttonall button3" value="כותרת"
-                                onclick="error(this.id,'פונט לא נכון 3')">
+                            <input id="b3" type="button" class="buttonall button3" value="קיץ">
                             <div class="fontName3">Heebo 400</div>
                         </div>
                         <div>
-                            <input id="b4" type="button" class="buttonall button4" value="כותרת"
-                                onclick="success(this.id)">
+                            <input id="b4" type="button" class="buttonall button4" value="קיץ">
                             <div class="fontName4">Varela Round 400</div>
+                        </div>
+                        <div>
+                            <input id="b5" type="button" class="buttonall button5" value="קיץ">
+                            <div class="fontName5">Fredoka 400</div>
+                        </div>
+                        <div>
+                            <input id="b6" type="button" class="buttonall button6" value="קיץ">
+                            <div class="fontName6">Noto Sans Hebrew 400</div>
+                        </div>
+                        <div>
+                            <input id="b7" type="button" class="buttonall button7" value="קיץ">
+                            <div class="fontName7">Amatic SC 400</div>
+                        </div>
+                        <div>
+                            <input id="b8" type="button" class="buttonall button8" value="קיץ">
+                            <div class="fontName8">Alef 400</div>
                         </div>
                     </form>
                     <div id="errortext"></div>
                     <div id="successtext"></div>
                 </div>
-                <div class="bottomBoard">
-                    <input type="button" class="button" value="ממשיכים" onclick="document.location.href='page1.html'">
-                </div>
             </div>
-
+            <div class="bottomBoard">
+                <input type="button" class="button" value="לשלב הבא" onclick="document.location.href='page1.html'">
+            </div>
         </div>
         <div class="leftBoard">
-            <div class="phoneMockup" id="phoneText">
-                <div id="header"> hihdhdh jkhgjkhgh jkhgjkh jkhgjkhg kjhjhgedg </div>
-                <div id="header1"> hihdhdh jkhgjkhgh jkhgjkh jkhgjkhg kjhjhgedg </div>
-            </div>
+            <div><img src="img/PosterBrief.png" alt="בריף" class="briefMockup"></div>
+            <div> <a href="https://www.freepik.com/vectors/poster">created by freepik</a></div>
         </div>
     </div>
+<input type="text" id="myt">
+<script>
+    
+let field = document.getElementById("myt");
 
+// See if we have an autosave value
+// (this will only happen if the page is accidentally refreshed)
+if (sessionStorage.getItem("autosave")) {
+  // Restore the contents of the text field
+  field.value = sessionStorage.getItem("autosave");
+}
+
+// Listen for changes in the text field
+field.addEventListener("change", function() {
+  // And save the results into the session storage object
+  sessionStorage.setItem("autosave", field.value);
+});
+</script>
 </body>
 
 </html>
