@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="style.css">
     <script src="script.js"></script>
     <title>משחק פונטים</title>
+
     <script>
         sessionStorage.setItem('counter', 0);
         sessionStorage.setItem('font1', '');
@@ -29,17 +30,17 @@
         <div class="rightBoard">
             <div class="subContainerDivider">
                 <div class="topBoard">
-                    <div class="question">אנחנו מעוניינים לעשות לוקליזציה לפוסטר, איזה פונט בעברית יתאים למילה 'קיץ' בכותרת שתשדר את האווירה המוצגת כאן?</div>
+                    <div class="question">אנחנו רוצים להציג גרסה בה הכותרת "קיץ" תבלוט יותר משאר הטקסט באמצעות הפונט, איזה פונט יתאים לכך?</div>
                 </div>
                 <div class="middleBoard">
-                    <div class="question">יש לבחור ארבעה פונטים מתוך שמונה.</div>
+                    <div class="question">יש לבחור ארבעה פונטים מתוך שמונה שכאן.</div>
                     <form>
                         <div>
-                            <input id="b1" type="button" class="buttonall button1" value="קיץ" onclick="error(this.id,'Narkisim')">
-                            <div class="fontName1">Open Sans 400</div>
+                            <input id="b1" type="button" class="buttonall button1" value="קיץ" onclick="click1()">
+                            <div class="fontName1">Open Sans Hebrew 800</div>
                         </div>
                         <div>
-                            <input id="b2" type="button" class="buttonall button2" value="קיץ" onclick="success(this.id,'Narkisim')">
+                            <input id="b2" type="button" class="buttonall button2" value="קיץ" onclick="click2()">
                             <div class="fontName2">Rubik 400</div>
                         </div>
                         <div>
@@ -76,8 +77,10 @@
             </div>
         </div>
         <div class="leftBoard">
-            <div><img src="img/PosterBrief.png" alt="בריף" class="briefMockup"></div>
-            <div> <a href="https://www.freepik.com/vectors/poster">created by freepik</a></div>
+            <div><img id="briefMockup" src="img/KIDMA.png" alt="בריף" class="briefMockup"></div>
+            <div><img id="opensanshebrew" src="img/OPEN SANS HEBREW.png" alt="בריף" class="briefMockup"></div>
+            <div><img id="rubik" src="img/RUBIK.png" alt="בריף" class="briefMockup"></div>
+            <div> <a href="https://www.freepik.com/vectors/poster" class="credit">created by freepik</a> | localized by Jolly</div>
         </div>
     </div>
 <input type="text" id="myt">

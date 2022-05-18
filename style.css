@@ -1,7 +1,8 @@
 /* ---- General ---- */
 @import url('https://fonts.googleapis.com/css2?family=Alef&family=Amatic+SC&family=Assistant&family=Fredoka&family=Heebo&family=Noto+Sans+Hebrew&family=Open+Sans&family=Rubik&family=Varela+Round&display=swap');
 
-* {
+*, *::before, *::after {
+  box-sizing: border-box;
   font-family: 'Assistant', sans-serif;
   font-weight: 400;
   direction: rtl;
@@ -13,7 +14,6 @@ body {
   margin: auto;
   max-width: 1440px;
   min-width: 200px;
-  max-height: 1024px;
   text-align: center;
 }
 
@@ -159,8 +159,8 @@ input.button:hover {
 
 .button1 {
   font-size: 30px;
-  font-family: 'Open Sans', sans-serif;
-  font-weight: 400;
+  font-family: 'Open Sans Hebrew', sans-serif;
+  font-weight: 800;
 }
 
 .fontname1 {
@@ -262,10 +262,21 @@ input.button:hover {
 /* leftboard */
 
 .briefMockup {
-  width: 427px;
-  height: 600px;
+  --width: 2481px;
+  width: calc(var (--width) / 5);
+  --height: 3508px;
+  height: calc(var(--height) / 5);
+  margin: 0 auto;
 }
 
 #header {
   position: relative;
+}
+
+#opensanshebrew {
+  display: none;
+}
+
+#rubik {
+  display: none;
 }
