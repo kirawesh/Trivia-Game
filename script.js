@@ -97,12 +97,12 @@ function click8() {
 
 
 function keepcheck(id) {
-    if(document.getElementById(id).style.backgroundColor == "rgb(165, 211, 235)"){
+    if(document.getElementById(id).style.backgroundColor == "blue"){
     document.getElementById(id).style.backgroundColor = "";
     }
 
     else {
-        document.getElementById(id).style.backgroundColor = "rgb(165, 211, 235)";
+        document.getElementById(id).style.backgroundColor = "blue";
     }
 }
 

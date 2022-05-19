@@ -176,7 +176,8 @@ input.button:hover {
  }
  
  .container div label input[type="checkbox"]:checked ~ span {
-   background: orange;
+   background: rgb(255, 196, 0);
+   color: #ffffff;
  }
 
 .button1 {
