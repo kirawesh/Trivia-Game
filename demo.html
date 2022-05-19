@@ -30,45 +30,78 @@
         <div class="rightBoard">
             <div class="subContainerDivider">
                 <div class="topBoard">
-                    <div class="question">אנחנו רוצים להציג גרסה בה הכותרת "קיץ" תבלוט יותר משאר הטקסט באמצעות הפונט, איזה פונט יתאים לכך?</div>
+                    <div class="question">אנחנו רוצים להציג גרסה בה הכותרת "קיץ" תבלוט יותר משאר הטקסט באמצעות הפונט,
+                        איזה פונט יתאים לכך?</div>
                 </div>
                 <div class="middleBoard">
                     <div class="question">יש לבחור ארבעה פונטים מתוך שמונה שכאן.</div>
-                    <form>
+                    <form class="container">
                         <div>
-                            <input id="b1" type="button" class="buttonall button1" value="קיץ" onclick="click1()">
-                            <div class="fontName1">Open Sans Hebrew 800</div>
+                            <label>
+                                <input id="b1" type="checkbox" name="check"
+                                    onclick="click1(); keepcheck(this.id); return disablebuttons()">
+                                <span class="button1">קיץ</span>
+                                <div class="fontName1">Open Sans Hebrew 800</div>
+                            </label>
                         </div>
                         <div>
-                            <input id="b2" type="button" class="buttonall button2" value="קיץ" onclick="click2()">
-                            <div class="fontName2">Rubik 400</div>
+                            <label>
+                                <input id="b2" type="checkbox" name="check"
+                                    onclick="click2(); keepcheck(this.id); return disablebuttons()">
+                                <span class="button2">קיץ</span>
+                                <div class="fontName2">Rubik 900</div>
+                            </label>
                         </div>
                         <div>
-                            <input id="b3" type="button" class="buttonall button3" value="קיץ" onclick="click3()>
-                            <div class="fontName3">Heebo 400</div>
+                            <label>
+                                <input id="b3" type="checkbox" name="check"
+                                    onclick="click3(); keepcheck(this.id); return disablebuttons()">
+                                <span class="button3">קיץ</span>
+                                <div class="fontName3">Heebo 900</div>
+                            </label>
                         </div>
                         <div>
-                            <input id="b4" type="button" class="buttonall button4" value="קיץ" onclick="click4()>
-                            <div class="fontName4">Varela Round 400</div>
+                            <label>
+                                <input id="b4" type="checkbox" name="check"
+                                    onclick="click4(); keepcheck(this.id); return disablebuttons()">
+                                <span class="button4">קיץ</span>
+                                <div class="fontName4">Varela Round 400 with stroke</div>
+                            </label>
                         </div>
                         <div>
-                            <input id="b5" type="button" class="buttonall button5" value="קיץ" onclick="click5()>
-                            <div class="fontName5">Fredoka 400</div>
+                            <label>
+                                <input id="b5" type="checkbox" name="check"
+                                    onclick="click5(); keepcheck(this.id); return disablebuttons()">
+                                <span class="button5">קיץ</span>
+                                <div class="fontName5">Fredoka 600</div>
+                            </label>
                         </div>
                         <div>
-                            <input id="b6" type="button" class="buttonall button6" value="קיץ" onclick="click6()>
-                            <div class="fontName6">Noto Sans Hebrew 400</div>
+                            <label>
+                                <input id="b6" type="checkbox" name="check"
+                                    onclick="click6(); keepcheck(this.id); return disablebuttons()">
+                                <span class="button6">קיץ</span>
+                                <div class="fontName6">Noto Sans Hebrew 900</div>
+                            </label>
                         </div>
                         <div>
-                            <input id="b7" type="button" class="buttonall button7" value="קיץ" onclick="click7()>
-                            <div class="fontName7">Amatic SC 400</div>
+                            <label>
+                            <input id="b7" type="checkbox" name="check"
+                                onclick="click7(); keepcheck(this.id); return disablebuttons()">
+                                <span class="button7">קיץ</span>
+                            <div class="fontName7">Amatic SC 700 with stroke</div>
+                        </label>
                         </div>
                         <div>
-                            <input id="b8" type="button" class="buttonall button8" value="קיץ" onclick="click8()>
-                            <div class="fontName8">Alef 400</div>
+                            <label>
+                            <input id="b8"type="checkbox" name="check"
+                                onclick="click8(); keepcheck(this.id); return disablebuttons()">
+                                <span class="button8">קיץ</span>
+                            <div class="fontName8">Alef 700</div>
+                        </label>
                         </div>
                     </form>
-                    <div id="errortext"></div>
+                    <div id="notvalid"></div>
                     <div id="successtext"></div>
                 </div>
             </div>
@@ -81,28 +114,33 @@
             <div><img id="opensanshebrew" src="img/OPEN SANS HEBREW.png" alt="בריף" class="briefMockup"></div>
             <div><img id="rubik" src="img/RUBIK.png" alt="בריף" class="briefMockup"></div>
             <div><img id="heebo" src="img/HEEBO.png" alt="בריף" class="briefMockup"></div>
-            <div><img id="rubik" src="img/RUBIK.png" alt="בריף" class="briefMockup"></div>
-            <div> <a href="https://www.freepik.com/vectors/poster" class="credit">created by freepik</a> | localized by Jolly</div>
+            <div><img id="varelaround" src="img/VARELA ROUND WITH STROKE.png" alt="בריף" class="briefMockup"></div>
+            <div><img id="fredoka" src="img/FREDOKA.png" alt="בריף" class="briefMockup"></div>
+            <div><img id="notosanshebrew" src="img/NOTO SANS HEBERW.png" alt="בריף" class="briefMockup"></div>
+            <div><img id="amatic" src="img/AMATIC WITH STROKE.png" alt="בריף" class="briefMockup"></div>
+            <div><img id="alef" src="img/ALEF.png" alt="בריף" class="briefMockup"></div>
+            <div> <a href="https://www.freepik.com/vectors/poster" class="credit">created by freepik</a> | localized by
+                Jolly</div>
         </div>
     </div>
-<input type="text" id="myt">
-<script>
-    
-let field = document.getElementById("myt");
+    <input type="text" id="myt">
+    <script>
 
-// See if we have an autosave value
-// (this will only happen if the page is accidentally refreshed)
-if (sessionStorage.getItem("autosave")) {
-  // Restore the contents of the text field
-  field.value = sessionStorage.getItem("autosave");
-}
+        let field = document.getElementById("myt");
 
-// Listen for changes in the text field
-field.addEventListener("change", function() {
-  // And save the results into the session storage object
-  sessionStorage.setItem("autosave", field.value);
-});
-</script>
+        // See if we have an autosave value
+        // (this will only happen if the page is accidentally refreshed)
+        if (sessionStorage.getItem("autosave")) {
+            // Restore the contents of the text field
+            field.value = sessionStorage.getItem("autosave");
+        }
+
+        // Listen for changes in the text field
+        field.addEventListener("change", function () {
+            // And save the results into the session storage object
+            sessionStorage.setItem("autosave", field.value);
+        });
+    </script>
 </body>
 
 </html>

@@ -1,5 +1,4 @@
 /* ---- General ---- */
-@import url('https://fonts.googleapis.com/css2?family=Alef&family=Amatic+SC&family=Assistant&family=Fredoka&family=Heebo&family=Noto+Sans+Hebrew&family=Open+Sans&family=Rubik&family=Varela+Round&display=swap');
 
 *, *::before, *::after {
   box-sizing: border-box;
@@ -146,16 +145,39 @@ input.button:hover {
   grid-gap: 40px;
 }
 
-.buttonall {
-  width: 100%;
-  height: 100%;
-  box-shadow: 0px 4px 12px -4px rgb(235, 235, 235);
-  border: none;
-  border-radius: 5px;
+.container div label {
   cursor: pointer;
-  transition: all 0.3s ease-in;
-  padding: 0 0.5em;
 }
+
+.container div label input[type="checkbox"] 
+{
+    display: none;
+}
+
+.container div label span {
+  width: 100%;
+  height: 80%;
+  display: inline-block;
+  box-shadow: 0px 4px 12px -4px rgb(235, 235, 235);
+  outline: none;
+  background: rgb(236, 236, 236);
+  border-radius: 5px;
+  color: black;
+  user-select: none;
+  overflow: hidden;
+  text-align: center;
+  padding-top: 10px;
+  transition: all 0.3s ease-in;
+}
+
+.container div label span:before {
+  content:'';
+  position: absolute; 
+ }
+ 
+ .container div label input[type="checkbox"]:checked ~ span {
+   background: orange;
+ }
 
 .button1 {
   font-size: 30px;
@@ -171,7 +193,7 @@ input.button:hover {
 .button2 {
   font-size: 30px;
   font-family: 'Rubik', sans-serif;
-  font-weight: 400;
+  font-weight: 900;
 }
 
 .fontname2 {
@@ -182,7 +204,7 @@ input.button:hover {
 .button3 {
   font-size: 30px;
   font-family: 'Heebo', sans-serif;
-  font-weight: 400;
+  font-weight: 900;
 }
 
 .fontname3 {
@@ -193,7 +215,7 @@ input.button:hover {
 .button4 {
   font-size: 30px;
   font-family: 'Varela Round', sans-serif;
-  font-weight: 400;
+  font-weight: 900;
 }
 
 .fontname4 {
@@ -204,7 +226,7 @@ input.button:hover {
 .button5 {
   font-size: 30px;
   font-family: 'Fredoka', sans-serif;
-  font-weight: 400;
+  font-weight: 600;
 }
 
 .fontname5 {
@@ -215,7 +237,7 @@ input.button:hover {
 .button6 {
   font-size: 30px;
   font-family: 'Noto Sans Hebrew', sans-serif;
-  font-weight: 400;
+  font-weight: 900;
 }
 
 .fontname6 {
@@ -226,7 +248,7 @@ input.button:hover {
 .button7 {
   font-size: 30px;
   font-family: 'Amatic SC', cursive;
-  font-weight: 400;
+  font-weight: 700;
 }
 
 .fontname7 {
@@ -237,7 +259,7 @@ input.button:hover {
 .button8 {
   font-size: 30px;
   font-family: 'Alef', sans-serif;
-  font-weight: 400;
+  font-weight: 700;
 }
 
 .fontname8 {
@@ -247,10 +269,13 @@ input.button:hover {
 
 /* Text */
 
-#errortext {
+#notvalid {
   text-align: right;
-  padding-top: 40px;
+  padding-top: 30px;
   position: fixed;
+  color: red;
+  font-weight: 700;
+  font-size: 1.2rem;
 }
 
 #successtext {
@@ -281,26 +306,26 @@ input.button:hover {
   display: none;
 }
 
-#rubik {
+#heebo {
   display: none;
 }
 
-#rubik {
+#varelaround {
   display: none;
 }
 
-#rubik {
+#fredoka {
   display: none;
 }
 
-#rubik {
+#notosanshebrew {
   display: none;
 }
 
-#rubik {
+#amatic {
   display: none;
 }
 
-#rubik {
+#alef {
   display: none;
 }
