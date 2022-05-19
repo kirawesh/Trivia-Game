@@ -2,6 +2,7 @@ function click1() {
     document.getElementById("opensanshebrew").style.display = 'block';
     document.getElementById("briefMockup").style.display = 'none';
     document.getElementById("rubik").style.display = 'none';
+    
 }
 
 function click2() {
@@ -11,7 +12,41 @@ function click2() {
 }
 
 
+function click3() {
+    document.getElementById("rubik").style.display = 'block';
+    document.getElementById("briefMockup").style.display = 'none';
+    document.getElementById("opensanshebrew").style.display = 'none';
+}
 
+function click4() {
+    document.getElementById("rubik").style.display = 'block';
+    document.getElementById("briefMockup").style.display = 'none';
+    document.getElementById("opensanshebrew").style.display = 'none';
+}
+
+function click5() {
+    document.getElementById("rubik").style.display = 'block';
+    document.getElementById("briefMockup").style.display = 'none';
+    document.getElementById("opensanshebrew").style.display = 'none';
+}
+
+function click6() {
+    document.getElementById("rubik").style.display = 'block';
+    document.getElementById("briefMockup").style.display = 'none';
+    document.getElementById("opensanshebrew").style.display = 'none';
+}
+
+function click7() {
+    document.getElementById("rubik").style.display = 'block';
+    document.getElementById("briefMockup").style.display = 'none';
+    document.getElementById("opensanshebrew").style.display = 'none';
+}
+
+function click8() {
+    document.getElementById("rubik").style.display = 'block';
+    document.getElementById("briefMockup").style.display = 'none';
+    document.getElementById("opensanshebrew").style.display = 'none';
+}
 
 // let counter;
 
