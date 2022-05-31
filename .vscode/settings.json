@@ -1,3 +1,4 @@
 {
-    "livePreview.defaultPreviewPath": "/demo.html"
+    "livePreview.defaultPreviewPath": "/demo.html",
+    "workbench.colorTheme": "Sublime Material Theme - Dark"
 }

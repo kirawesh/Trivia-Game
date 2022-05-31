@@ -128,7 +128,32 @@ function disablebuttons() {
         "";
       return true;
     }
+}
+
+function resetb(){
+sessionStorage.clear();
+sessionStorage.setItem('counterb',0);
+
+}
+
+function myselect(id) {    
+
+  if(sessionStorage.getItem(id)=='inline-block')
+  {
+    sessionStorage.setItem(id, '');
+    sessionStorage.setItem('counterb',sessionStorage.getItem('counterb')*1-1);
+    
   }
+  else if (sessionStorage.getItem('counterb')*1==4){
+
+  }
+  else 
+  {
+    sessionStorage.setItem(id, 'inline-block');
+    sessionStorage.setItem('counterb', sessionStorage.getItem('counterb')*1+1);
+  }
+  
+}
 
 // let counter;
 

@@ -1,6 +1,8 @@
 /* ---- General ---- */
 
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
   font-family: 'Assistant', sans-serif;
   font-weight: 400;
@@ -132,7 +134,7 @@ input.button:hover {
   max-width: 720px;
 }
 
-.bottomBoard{
+.bottomBoard {
   padding-top: 1em;
   text-align: center;
 }
@@ -149,9 +151,8 @@ input.button:hover {
   cursor: pointer;
 }
 
-.container div label input[type="checkbox"] 
-{
-    display: none;
+.container div label input[type="checkbox"] {
+  display: none;
 }
 
 .container div label span {
@@ -171,14 +172,14 @@ input.button:hover {
 }
 
 .container div label span:before {
-  content:'';
-  position: absolute; 
- }
- 
- .container div label input[type="checkbox"]:checked ~ span {
-   background: rgb(255, 196, 0);
-   color: #ffffff;
- }
+  content: '';
+  position: absolute;
+}
+
+.container div label input[type="checkbox"]:checked~span {
+  background: rgb(255, 196, 0);
+  color: #ffffff;
+}
 
 .button1 {
   font-size: 30px;
