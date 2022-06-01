@@ -137,11 +137,13 @@ input.button:hover {
 .bottomBoard {
   padding-top: 1em;
   text-align: center;
+  justify-content: center;
+  /* position: absolute; */
 }
 
 /*Fonts Buttons*/
 
-.middleBoard form {
+.middleBoard .container {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-gap: 40px;
@@ -330,4 +332,37 @@ input.button:hover {
 
 #alef {
   display: none;
+}
+
+/* ---Page 1--- */
+
+.choiceBoard {
+  padding: 2em;
+}
+
+.choiceBoard .question {
+  padding-bottom: 2em;
+}
+
+.choiceBoard .imageContainer {
+  display: flex;
+  flex-wrap: wrap;
+  flex-flow: row;
+  align-items: center;
+  justify-content: center;
+  gap: .5em;
+  border: 1px solid saddlebrown;
+ 
+}
+
+.choiceMockup {
+  --width: 2481px;
+  width: calc(var (--width) / 7.5);
+  --height: 3508px;
+  height: calc(var(--height) / 7.5);
+  margin: 0 auto;
+}
+
+input[type="checkbox"]{
+  cursor: pointer;
 }

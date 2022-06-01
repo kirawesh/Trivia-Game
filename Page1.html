@@ -20,11 +20,9 @@
     </script>
 </head>
 
-<body onload="hide();">
-    <div id="b1" style="display: none;">button1</div>
-    <div id="b2" style="display: none;">button2</div>
-
+<body onload="hide(); resetCheck();">
     <div class="title2">הבחירה הסופית</div>
+
     <div class="scoreboardContainer">
         <div class="pageContainer">
             <div class="page">דמו</div>
@@ -34,103 +32,51 @@
             <div class="score" id="score">000</div>
         </div>
     </div>
-    <div class="contentContainer">
-        <div class="rightBoard">
-            <div class="subContainerDivider">
-                <div class="topBoard">
-                    <div class="question">אנחנו רוצים להציג גרסה בה הכותרת "קיץ" תבלוט יותר משאר הטקסט באמצעות הפונט,
-                        איזה פונט יתאים לכך?</div>
-                </div>
-                <div class="middleBoard">
-                    <div class="question">יש לבחור ארבעה פונטים מתוך שמונה שכאן.</div>
-                    <form class="container">
-                        <div>
-                            <label>
-                                <input id="b1" type="checkbox" name="check"
-                                    onclick="click1(); keepcheck(this.id); myselect(this.id); return disablebuttons()">
-                                <span class="button1">קיץ</span>
-                                <div class="fontName1">Open Sans Hebrew 800</div>
-                            </label>
-                        </div>
-                        <div>
-                            <label>
-                                <input id="b2" type="checkbox" name="check"
-                                    onclick="click2(); keepcheck(this.id); myselect(this.id); return disablebuttons()">
-                                <span class="button2">קיץ</span>
-                                <div class="fontName2">Rubik 900</div>
-                            </label>
-                        </div>
-                        <div>
-                            <label>
-                                <input id="b3" type="checkbox" name="check"
-                                    onclick="click3(); keepcheck(this.id); myselect(this.id); return disablebuttons()">
-                                <span class="button3">קיץ</span>
-                                <div class="fontName3">Heebo 900</div>
-                            </label>
-                        </div>
-                        <div>
-                            <label>
-                                <input id="b4" type="checkbox" name="check"
-                                    onclick="click4(); keepcheck(this.id); myselect(this.id); return disablebuttons()">
-                                <span class="button4">קיץ</span>
-                                <div class="fontName4">Varela Round 400 with stroke</div>
-                            </label>
-                        </div>
-                        <div>
-                            <label>
-                                <input id="b5" type="checkbox" name="check"
-                                    onclick="click5(); keepcheck(this.id); myselect(this.id); return disablebuttons()">
-                                <span class="button5">קיץ</span>
-                                <div class="fontName5">Fredoka 600</div>
-                            </label>
-                        </div>
-                        <div>
-                            <label>
-                                <input id="b6" type="checkbox" name="check"
-                                    onclick="click6(); keepcheck(this.id); myselect(this.id); return disablebuttons()">
-                                <span class="button6">קיץ</span>
-                                <div class="fontName6">Noto Sans Hebrew 900</div>
-                            </label>
-                        </div>
-                        <div>
-                            <label>
-                                <input id="b7" type="checkbox" name="check"
-                                    onclick="click7(); keepcheck(this.id); myselect(this.id); return disablebuttons()">
-                                <span class="button7">קיץ</span>
-                                <div class="fontName7">Amatic SC 700 with stroke</div>
-                            </label>
-                        </div>
-                        <div>
-                            <label>
-                                <input id="b8" type="checkbox" name="check"
-                                    onclick="click8(); keepcheck(this.id); myselect(this.id); return disablebuttons()">
-                                <span class="button8">קיץ</span>
-                                <div class="fontName8">Alef 700</div>
-                            </label>
-                        </div>
-                    </form>
-                    <div id="notvalid"></div>
-                    <div id="successtext"></div>
-                </div>
+
+    <div class="choiceBoard">
+        <div class="question">לפניך ארבעה בחירות שבחרת, יש לבחור עיצוב אחד לשלב הסופי (לחץ על תמונה אחת שברצונך לבחור לשלב הסופי)</div>
+
+        <div class="imageContainer">
+            
+            <div>
+                <input id="b1" type="image" src="img/OPEN SANS HEBREW.png" alt="בריף" class="choiceMockup" style="display: none;" onclick="selectImg(this.id)">
             </div>
-            <div class="bottomBoard">
-                <input type="button" class="button" value="הקודם" onclick="document.location.href='demo.html'">
-                <input type="button" class="button" value="הבא" onclick="document.location.href='page2.html'">
+
+            <div>
+                <input id="b2" type="image" src="img/RUBIK.png" alt="בריף" class="choiceMockup" style="display: none;" onclick="selectImg(this.id)">
             </div>
+
+            <div>
+                <input id="b3" type="image" src="img/HEEBO.png" alt="בריף" class="choiceMockup" style="display: none;" onclick="selectImg(this.id)">
+            </div>
+
+            <div>
+                <input id="b4" type="image" src="img/VARELA ROUND WITH STROKE.png" alt="בריף" class="choiceMockup" style="display: none;" onclick="selectImg(this.id)">
+            </div>
+
+            <div>
+                <input id="b5" type="image" src="img/FREDOKA.png" alt="בריף" class="choiceMockup" style="display: none;" onclick="selectImg(this.id)">
+            </div>
+
+            <div>
+                <input id="b6" type="image" src="img/NOTO SANS HEBERW.png" alt="בריף" class="choiceMockup" style="display: none;" onclick="selectImg(this.id)">
+            </div>
+
+            <div>
+                <input id="b7" type="image" src="img/AMATIC WITH STROKE.png" alt="בריף" class="choiceMockup" style="display: none;" onclick="selectImg(this.id)">
+            </div>
+
+            <div>
+                <input id="b8" type="image" src="img/ALEF.png" alt="בריף" class="choiceMockup" style="display: none;" onclick="selectImg(this.id)">
+            </div>
+
         </div>
-        <div class="leftBoard">
-            <div><img id="briefMockup" src="img/KIDMA.png" alt="בריף" class="briefMockup"></div>
-            <div><img id="opensanshebrew" src="img/OPEN SANS HEBREW.png" alt="בריף" class="briefMockup"></div>
-            <div><img id="rubik" src="img/RUBIK.png" alt="בריף" class="briefMockup"></div>
-            <div><img id="heebo" src="img/HEEBO.png" alt="בריף" class="briefMockup"></div>
-            <div><img id="varelaround" src="img/VARELA ROUND WITH STROKE.png" alt="בריף" class="briefMockup"></div>
-            <div><img id="fredoka" src="img/FREDOKA.png" alt="בריף" class="briefMockup"></div>
-            <div><img id="notosanshebrew" src="img/NOTO SANS HEBERW.png" alt="בריף" class="briefMockup"></div>
-            <div><img id="amatic" src="img/AMATIC WITH STROKE.png" alt="בריף" class="briefMockup"></div>
-            <div><img id="alef" src="img/ALEF.png" alt="בריף" class="briefMockup"></div>
-            <div> <a href="https://www.freepik.com/vectors/poster" class="credit">created by freepik</a> | localized by
-                Jolly</div>
-        </div>
+
+    </div>
+
+    <div class="bottomBoard">
+        <input type="button" class="button" value="הקודם" onclick="document.location.href='demo.html'">
+        <input type="button" class="button" value="הבא" onclick="document.location.href='page2.html'">
     </div>
 
 </body>

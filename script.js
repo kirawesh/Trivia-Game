@@ -155,6 +155,25 @@ function myselect(id) {
   
 }
 
+function resetCheck(){
+  sessionStorage.clear();
+  
+  }
+
+var a;
+function selectImg(id){
+  if(a==1) {
+    document.getElementById("image").style.display = 'inline-block';
+    return a=0;
+  }
+
+  else {
+    document.getElementById("image").style.display= 'none';
+    return a=1;
+  }
+}
+
+
 // let counter;
 
 
