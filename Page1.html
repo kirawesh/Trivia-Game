@@ -9,18 +9,17 @@
     <script src="script.js"></script>
     <title>משחק פונטים</title>
     <script>
-        function hide() {
+        function show() {
             for (count = 1; count < 9; count++) {
                 if (sessionStorage.getItem('b' + count) == 'inline-block') {
                     document.getElementById('b' + count).style.display = 'inline-block';
                 }
             }
         }
-
     </script>
 </head>
 
-<body onload="hide(); resetCheck();">
+<body onload="show()">
     <div class="title2">הבחירה הסופית</div>
 
     <div class="scoreboardContainer">
@@ -39,35 +38,35 @@
         <div class="imageContainer">
             
             <div>
-                <input id="b1" type="image" src="img/OPEN SANS HEBREW.png" alt="בריף" class="choiceMockup" style="display: none;" onclick="selectImg(this.id)">
+                <input id="b1" type="image" src="img/OPEN SANS HEBREW.png" alt="בריף" class="choiceMockup" style="display: none;" onclick="selectIMG(this.id)">
             </div>
 
             <div>
-                <input id="b2" type="image" src="img/RUBIK.png" alt="בריף" class="choiceMockup" style="display: none;" onclick="selectImg(this.id)">
+                <input id="b2" type="image" src="img/RUBIK.png" alt="בריף" class="choiceMockup" style="display: none;" onclick="selectIMG(this.id)">
             </div>
 
             <div>
-                <input id="b3" type="image" src="img/HEEBO.png" alt="בריף" class="choiceMockup" style="display: none;" onclick="selectImg(this.id)">
+                <input id="b3" type="image" src="img/HEEBO.png" alt="בריף" class="choiceMockup" style="display: none;" onclick="selectIMG(this.id)">
             </div>
 
             <div>
-                <input id="b4" type="image" src="img/VARELA ROUND WITH STROKE.png" alt="בריף" class="choiceMockup" style="display: none;" onclick="selectImg(this.id)">
+                <input id="b4" type="image" src="img/VARELA ROUND WITH STROKE.png" alt="בריף" class="choiceMockup" style="display: none;" onclick="selectIMG(this.id)">
             </div>
 
             <div>
-                <input id="b5" type="image" src="img/FREDOKA.png" alt="בריף" class="choiceMockup" style="display: none;" onclick="selectImg(this.id)">
+                <input id="b5" type="image" src="img/FREDOKA.png" alt="בריף" class="choiceMockup" style="display: none;" onclick="selectIMG(this.id)">
             </div>
 
             <div>
-                <input id="b6" type="image" src="img/NOTO SANS HEBERW.png" alt="בריף" class="choiceMockup" style="display: none;" onclick="selectImg(this.id)">
+                <input id="b6" type="image" src="img/NOTO SANS HEBERW.png" alt="בריף" class="choiceMockup" style="display: none;" onclick="selectIMG(this.id)">
             </div>
 
             <div>
-                <input id="b7" type="image" src="img/AMATIC WITH STROKE.png" alt="בריף" class="choiceMockup" style="display: none;" onclick="selectImg(this.id)">
+                <input id="b7" type="image" src="img/AMATIC WITH STROKE.png" alt="בריף" class="choiceMockup" style="display: none;" onclick="selectIMG(this.id)">
             </div>
 
             <div>
-                <input id="b8" type="image" src="img/ALEF.png" alt="בריף" class="choiceMockup" style="display: none;" onclick="selectImg(this.id)">
+                <input id="b8" type="image" src="img/ALEF.png" alt="בריף" class="choiceMockup" style="display: none;" onclick="selectIMG(this.id)">
             </div>
 
         </div>

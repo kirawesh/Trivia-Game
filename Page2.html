@@ -9,9 +9,19 @@
     <script src="script.js"></script>
     <title>page2</title>
 
+    <script>
+            function show() {
+            for (count = 1; count < 9; count++) {
+                if (sessionStorage.getItem('b' + count) == 'inline-block') {
+                    document.getElementById('b' + count).style.display = 'inline-block';
+                }
+            }
+        }
+    </script>
+
 </head>
 
-<body>
+<body onload="show()">
 
     <div class="title2">והתוצאה היא:</div>
 
@@ -29,14 +39,38 @@
         <div class="question">והתשובה היא</div>
 
         <div class="imageContainer">
-            <div><img id="image" src="img/OPEN SANS HEBREW.png" alt="בריף" style="display: none;" class="briefMockup"></div>
-            <div><img id="image" src="img/RUBIK.png" alt="בריף" class="briefMockup" style="display: none;"></div>
-            <div><img id="b3" src="img/HEEBO.png" alt="בריף" class="briefMockup" style="display: none;"></div>
-            <div><img id="b4" src="img/VARELA ROUND WITH STROKE.png" alt="בריף" class="briefMockup" style="display: none;"></div>
-            <div><img id="b5" src="img/FREDOKA.png" alt="בריף" class="briefMockup" style="display: none;"></div>
-            <div><img id="b6" src="img/NOTO SANS HEBERW.png" alt="בריף" class="briefMockup" style="display: none;"></div>
-            <div><img id="b7" src="img/AMATIC WITH STROKE.png" alt="בריף" class="briefMockup" style="display: none;"></div>
-            <div><img id="b8" src="img/ALEF.png" alt="בריף" class="briefMockup" style="display: none;"></div>
+            
+            <div>
+                <input id="b1" type="image" src="img/OPEN SANS HEBREW.png" alt="בריף" class="choiceMockup" style="display: none;">
+            </div>
+
+            <div>
+                <input id="b2" type="image" src="img/RUBIK.png" alt="בריף" class="choiceMockup" style="display: none;">
+            </div>
+
+            <div>
+                <input id="b3" type="image" src="img/HEEBO.png" alt="בריף" class="choiceMockup" style="display: none;">
+            </div>
+
+            <div>
+                <input id="b4" type="image" src="img/VARELA ROUND WITH STROKE.png" alt="בריף" class="choiceMockup" style="display: none;">
+            </div>
+
+            <div>
+                <input id="b5" type="image" src="img/FREDOKA.png" alt="בריף" class="choiceMockup" style="display: none;">
+            </div>
+
+            <div>
+                <input id="b6" type="image" src="img/NOTO SANS HEBERW.png" alt="בריף" class="choiceMockup" style="display: none;">
+            </div>
+
+            <div>
+                <input id="b7" type="image" src="img/AMATIC WITH STROKE.png" alt="בריף" class="choiceMockup" style="display: none;">
+            </div>
+
+            <div>
+                <input id="b8" type="image" src="img/ALEF.png" alt="בריף" class="choiceMockup" style="display: none;">
+            </div>
 
         </div>
 
@@ -44,7 +78,7 @@
 
     <div class="bottomBoard">
         <input type="button" class="button" value="הקודם" onclick="document.location.href='page1.html'">
-        <input type="button" class="button" value="מוכנים להתחיל?" onclick="document.location.href='#'">
+        <input type="button" class="button" value="מוכנים לשחק?" onclick="document.location.href='index.html'">
     </div>
 
 </body>
