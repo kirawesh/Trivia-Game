@@ -10,8 +10,8 @@
     <title>page2</title>
 
     <script>
-            function show() {
-            for (count = 1; count < 9; count++) {
+        function show() {
+            for (count = 1; count < 7; count++) {
                 if (sessionStorage.getItem('b' + count) == 'inline-block') {
                     document.getElementById('b' + count).style.display = 'inline-block';
                 }
@@ -36,12 +36,12 @@
     </div>
 
     <div class="choiceBoard">
-        <div class="question">והתשובה היא</div>
 
         <div class="imageContainer">
-            
+
             <div>
-                <input id="b1" type="image" src="img/OPEN SANS HEBREW.png" alt="בריף" class="choiceMockup" style="display: none;">
+                <input id="b1" type="image" src="img/OPEN SANS HEBREW.png" alt="בריף" class="choiceMockup"
+                    style="display: none;">
             </div>
 
             <div>
@@ -53,25 +53,49 @@
             </div>
 
             <div>
-                <input id="b4" type="image" src="img/VARELA ROUND WITH STROKE.png" alt="בריף" class="choiceMockup" style="display: none;">
+                <input id="b4" type="image" src="img/FREDOKA.png" alt="בריף" class="choiceMockup"
+                    style="display: none;">
             </div>
 
             <div>
-                <input id="b5" type="image" src="img/FREDOKA.png" alt="בריף" class="choiceMockup" style="display: none;">
+                <input id="b5" type="image" src="img/NOTO SANS HEBERW.png" alt="בריף" class="choiceMockup"
+                    style="display: none;">
             </div>
 
             <div>
-                <input id="b6" type="image" src="img/NOTO SANS HEBERW.png" alt="בריף" class="choiceMockup" style="display: none;">
+                <input id="b6" type="image" src="img/ALEF.png" alt="בריף" class="choiceMockup" style="display: none;">
             </div>
 
-            <div>
-                <input id="b7" type="image" src="img/AMATIC WITH STROKE.png" alt="בריף" class="choiceMockup" style="display: none;">
-            </div>
+        </div>
 
-            <div>
-                <input id="b8" type="image" src="img/ALEF.png" alt="בריף" class="choiceMockup" style="display: none;">
-            </div>
+        <div id="scoreText" style="display: inline-block; ">
+            <script>
+                if (sessionStorage.getItem("b1") == "inline-block") {
+                    document.getElementById("scoreText").innerHTML = "כל הכבוד על הבחירה95/100 ";
+                }
 
+                else  if (sessionStorage.getItem("b2") == "inline-block") {
+                    document.getElementById("scoreText").innerHTML = "הסטודיו התלהב מהעיצוב";
+                    document.getElementById("score").innerHTML = "090";
+                    sessionStorage.setItem('counterb',sessionStorage.getItem('counterb')*1 + 90);
+                }
+
+                else  if (sessionStorage.getItem("b3") == "inline-block") {
+                    document.getElementById("scoreText").innerHTML = "הסטודיו התלהב מהעיצוב";
+                }
+
+                else  if (sessionStorage.getItem("b4") == "inline-block") {
+                    document.getElementById("scoreText").innerHTML = "הסטודיו התלהב מהעיצוב";
+                }
+
+                else  if (sessionStorage.getItem("b5") == "inline-block") {
+                    document.getElementById("scoreText").innerHTML = "הסטודיו התלהב מהעיצוב";
+                }
+
+                else  if (sessionStorage.getItem("b6") == "inline-block") {
+                    document.getElementById("scoreText").innerHTML = "הסטודיו התלהב מהעיצוב";
+                }
+            </script>
         </div>
 
     </div>

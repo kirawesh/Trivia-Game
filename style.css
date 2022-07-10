@@ -1,5 +1,7 @@
 /* ---- General ---- */
 
+@import url('https://fonts.googleapis.com/css2?family=Alef:wght@700&family=Fredoka:wght@600&family=Heebo:wght@900&family=Noto+Sans+Hebrew:wght@900&family=Open+Sans+Hebrew:wght@800&family=Rubik:wght@900&display=swap');
+
 *,
 *::before,
 *::after {
@@ -40,7 +42,7 @@ input.button:hover {
 /* ---- Index ---- */
 
 .logobig {
-  margin-top: 55px;
+  margin-top: 200px;
 }
 
 .slogan {
@@ -218,8 +220,8 @@ input.button:hover {
 
 .button4 {
   font-size: 30px;
-  font-family: 'Varela Round', sans-serif;
-  font-weight: 900;
+  font-family: 'Fredoka', sans-serif;
+  font-weight: 600;
 }
 
 .fontname4 {
@@ -229,8 +231,8 @@ input.button:hover {
 
 .button5 {
   font-size: 30px;
-  font-family: 'Fredoka', sans-serif;
-  font-weight: 600;
+  font-family: 'Noto Sans Hebrew', sans-serif;
+  font-weight: 900;
 }
 
 .fontname5 {
@@ -240,33 +242,11 @@ input.button:hover {
 
 .button6 {
   font-size: 30px;
-  font-family: 'Noto Sans Hebrew', sans-serif;
-  font-weight: 900;
-}
-
-.fontname6 {
-  padding-top: 5px;
-  font-size: 15px;
-}
-
-.button7 {
-  font-size: 30px;
-  font-family: 'Amatic SC', cursive;
-  font-weight: 700;
-}
-
-.fontname7 {
-  padding-top: 5px;
-  font-size: 15px;
-}
-
-.button8 {
-  font-size: 30px;
   font-family: 'Alef', sans-serif;
   font-weight: 700;
 }
 
-.fontname8 {
+.fontname6 {
   padding-top: 5px;
   font-size: 15px;
 }
@@ -314,19 +294,11 @@ input.button:hover {
   display: none;
 }
 
-#varelaround {
-  display: none;
-}
-
 #fredoka {
   display: none;
 }
 
 #notosanshebrew {
-  display: none;
-}
-
-#amatic {
   display: none;
 }
 
@@ -351,7 +323,6 @@ input.button:hover {
   align-items: center;
   justify-content: center;
   gap: .5em;
-  border: 1px solid saddlebrown;
  
 }
 
@@ -365,4 +336,16 @@ input.button:hover {
 
 input[type="checkbox"]{
   cursor: pointer;
+}
+
+.hide {
+  display: none;
+}
+
+.show {
+  display: block;
+}
+
+#scoreText {
+  font-size: 2rem;
 }

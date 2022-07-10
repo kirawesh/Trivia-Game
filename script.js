@@ -1,12 +1,12 @@
+// image font display //
+
 function click1() {
     document.getElementById("opensanshebrew").style.display = 'block';
     document.getElementById("briefMockup").style.display = 'none';
     document.getElementById("rubik").style.display = 'none';
     document.getElementById("heebo").style.display = 'none';
-    document.getElementById("varelaround").style.display = 'none';
     document.getElementById("fredoka").style.display = 'none';
     document.getElementById("notosanshebrew").style.display = 'none';
-    document.getElementById("amatic").style.display = 'none';
     document.getElementById("alef").style.display = 'none';
     
 }
@@ -16,10 +16,8 @@ function click2() {
     document.getElementById("briefMockup").style.display = 'none';
     document.getElementById("opensanshebrew").style.display = 'none';
     document.getElementById("heebo").style.display = 'none';
-    document.getElementById("varelaround").style.display = 'none';
     document.getElementById("fredoka").style.display = 'none';
     document.getElementById("notosanshebrew").style.display = 'none';
-    document.getElementById("amatic").style.display = 'none';
     document.getElementById("alef").style.display = 'none';
 }
 
@@ -28,73 +26,42 @@ function click3() {
     document.getElementById("briefMockup").style.display = 'none';
     document.getElementById("opensanshebrew").style.display = 'none';
     document.getElementById("rubik").style.display = 'none';
-    document.getElementById("varelaround").style.display = 'none';
     document.getElementById("fredoka").style.display = 'none';
     document.getElementById("notosanshebrew").style.display = 'none';
-    document.getElementById("amatic").style.display = 'none';
     document.getElementById("alef").style.display = 'none';
 }
 
 function click4() {
-    document.getElementById("varelaround").style.display = 'block';
-    document.getElementById("briefMockup").style.display = 'none';
-    document.getElementById("opensanshebrew").style.display = 'none';
-    document.getElementById("rubik").style.display = 'none';
-    document.getElementById("heebo").style.display = 'none';
-    document.getElementById("fredoka").style.display = 'none';
-    document.getElementById("notosanshebrew").style.display = 'none';
-    document.getElementById("amatic").style.display = 'none';
-    document.getElementById("alef").style.display = 'none';
-}
-
-function click5() {
     document.getElementById("fredoka").style.display = 'block';
     document.getElementById("briefMockup").style.display = 'none';
     document.getElementById("opensanshebrew").style.display = 'none';
     document.getElementById("rubik").style.display = 'none';
-    document.getElementById("varelaround").style.display = 'none';
     document.getElementById("heebo").style.display = 'none';
     document.getElementById("notosanshebrew").style.display = 'none';
-    document.getElementById("amatic").style.display = 'none';
     document.getElementById("alef").style.display = 'none';
 }
 
-function click6() {
+function click5() {
     document.getElementById("notosanshebrew").style.display = 'block';
     document.getElementById("briefMockup").style.display = 'none';
     document.getElementById("opensanshebrew").style.display = 'none';
     document.getElementById("rubik").style.display = 'none';
-    document.getElementById("varelaround").style.display = 'none';
     document.getElementById("fredoka").style.display = 'none';
-    document.getElementById("heebo").style.display = 'none';
-    document.getElementById("amatic").style.display = 'none';
-    document.getElementById("alef").style.display = 'none';
-}
-
-function click7() {
-    document.getElementById("amatic").style.display = 'block';
-    document.getElementById("briefMockup").style.display = 'none';
-    document.getElementById("opensanshebrew").style.display = 'none';
-    document.getElementById("rubik").style.display = 'none';
-    document.getElementById("varelaround").style.display = 'none';
-    document.getElementById("fredoka").style.display = 'none';
-    document.getElementById("notosanshebrew").style.display = 'none';
     document.getElementById("heebo").style.display = 'none';
     document.getElementById("alef").style.display = 'none';
 }
 
-function click8() {
+function click6() {
     document.getElementById("alef").style.display = 'block';
     document.getElementById("briefMockup").style.display = 'none';
     document.getElementById("opensanshebrew").style.display = 'none';
     document.getElementById("rubik").style.display = 'none';
-    document.getElementById("varelaround").style.display = 'none';
     document.getElementById("fredoka").style.display = 'none';
     document.getElementById("notosanshebrew").style.display = 'none';
-    document.getElementById("amatic").style.display = 'none';
     document.getElementById("heebo").style.display = 'none';
 }
 
+// Game functions //
 
 function keepcheck(id) {
     if(document.getElementById(id).style.backgroundColor == "blue"){
@@ -166,6 +133,11 @@ function selectIMG(id)
   sessionStorage.clear();
   sessionStorage.setItem(id, 'inline-block');
 }
+
+
+
+
+
 // let counter;
 
 
