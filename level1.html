@@ -11,7 +11,7 @@
     
 </head>
 
-<body onload="resetb();">
+<body onload="resetImage();">
     <div class="title2">קודם, איך משחקים?</div>
     <div class="scoreboardContainer">
         <div class="pageContainer">
@@ -19,7 +19,11 @@
         </div>
         <div class="scoreContainer">
             <div class="crown"></div>
-            <div class="score" id="score">0</div>
+            <div class="score" id="score">
+                <script>
+                    document.getElementById("score").innerHTML = sessionStorage.getItem('totalScore');
+                </script>
+            </div>
         </div>
     </div>
     <div class="contentContainer">
@@ -86,8 +90,8 @@
                 </div>
             </div>
             <div class="bottomBoard">
-                <input type="button" class="button" value="לדף הבית" onclick="document.location.href='index.html'">
-                <input type="button" class="button" value="הבא" onclick="document.location.href='page1.html'">
+                <input type="button" class="button" value="להתחלה" onclick="document.location.href='demo.html'">
+                <input type="button" class="button" value="לשלב הבא" onclick="document.location.href='level1-1.html'">
             </div>
         </div>
         <div class="leftBoard">
@@ -98,7 +102,7 @@
             <div><img id="fredoka" src="img/FREDOKA.png" alt="בריף" class="briefMockup"></div>
             <div><img id="notosanshebrew" src="img/NOTO SANS HEBERW.png" alt="בריף" class="briefMockup"></div>
             <div><img id="alef" src="img/ALEF.png" alt="בריף" class="briefMockup"></div>
-            <div> <a href="https://www.freepik.com" class="credit">created by freepik</a> | localized by
+            <div> <a href="https://www.freepik.com/vectors/poster" class="credit">created by freepik</a> | localized by
                 Jolly</div>
         </div>
     </div>

@@ -98,9 +98,19 @@ function disablebuttons() {
 }
 
 function resetb(){
+  // c = sessionStorage.getItem('totalScore');
 sessionStorage.clear();
-sessionStorage.setItem('counterb',0);
+// sessionStorage.setItem('totalScore',c);
 
+}
+
+function resetImage(){
+  c = sessionStorage.getItem('totalScore')
+  sessionStorage.clear();
+  if (c == null) 
+    sessionStorage.setItem('totalScore', 0);
+  else 
+  sessionStorage.setItem('totalScore', c);
 }
 
 function myselect(id) {    
@@ -122,16 +132,22 @@ function myselect(id) {
   
 }
 
-function resetCheck()
-{
-  sessionStorage.clear();
-}
+// function resetCheck()
+// {
+//   sessionStorage.clear();
+// }
 
 
 function selectIMG(id)
 {
+  
+  c = sessionStorage.getItem('totalScore')
   sessionStorage.clear();
   sessionStorage.setItem(id, 'inline-block');
+  if (c == null) 
+    sessionStorage.setItem('totalScore', 0);
+  else 
+  sessionStorage.setItem('totalScore', c);
 }
 
 

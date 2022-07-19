@@ -28,7 +28,11 @@
         </div>
         <div class="scoreContainer">
             <div class="crown"></div>
-            <div class="score" id="score">0</div>
+            <div class="score" id="score">
+                <script>
+                    document.getElementById("score").innerHTML = sessionStorage.getItem('totalScore');
+                </script>
+            </div>
         </div>
     </div>
 
@@ -67,7 +71,7 @@
 
     <div class="bottomBoard">
         <input type="button" class="button" value="הקודם" onclick="document.location.href='demo.html'">
-        <input type="button" class="button" value="הבא" onclick="document.location.href='page2.html'">
+        <input type="button" class="button" value="הבא" onclick="document.location.href='level1-2.html'">
     </div>
 
 </body>
