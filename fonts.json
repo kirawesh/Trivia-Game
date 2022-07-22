@@ -1,0 +1,12 @@
+{
+    "totalScore": 0,
+    "fonts":[
+        {
+            "id": 1,
+            "name": "Open",
+            "score": 90,
+            "imageId": 1,
+            "isSelected": false
+        }
+    ]
+}
