@@ -187,3 +187,11 @@ function selectIMG(id)
 //     document.getElementById("score").innerHTML = sessionStorage.getItem('counter');
     
 // }
+
+function loadFontsModel(){
+  fetch('fonts.json')
+  .then(response => response.text())
+  .then((data) => {
+    sessionStorage.setItem("model", data);
+  })
+}

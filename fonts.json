@@ -3,9 +3,18 @@
     "fonts":[
         {
             "id": 1,
-            "name": "Open",
+            "fontName": "Open",
             "score": 90,
             "imageId": 1,
+            "selectionText": "איזה יופי",
+            "isSelected": false
+        },
+        {
+            "id": 2,
+            "fontName": "Open",
+            "score": 80,
+            "imageId": 2,
+            "selectionText": "איזה יופי",
             "isSelected": false
         }
     ]
